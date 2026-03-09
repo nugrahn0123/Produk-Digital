@@ -332,7 +332,8 @@ footer {
 .journey,
 .audience,
 .faq,
-.closing-cta {
+.closing-cta,
+.social-media {
     margin-top: 30px;
 }
 
@@ -406,6 +407,62 @@ footer {
     background: var(--box-solid);
     text-align: center;
     padding: 26px;
+}
+
+.social-media {
+    border: 1px solid var(--box-border);
+    border-radius: 18px;
+    background: var(--box-solid);
+    text-align: center;
+    padding: 24px;
+}
+
+.social-media h3 {
+    font-family: "Sora", sans-serif;
+    color: var(--box-text);
+    margin-bottom: 8px;
+    font-size: clamp(1.15rem, 3vw, 1.55rem);
+}
+
+.social-media p {
+    color: var(--box-text-soft);
+    line-height: 1.75;
+    margin-bottom: 14px;
+}
+
+.social-links {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.social-link {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 16px;
+    border-radius: 999px;
+    min-width: 130px;
+    color: #032015;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.social-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(21, 128, 61, 0.25);
+}
+
+.social-link.facebook {
+    background: linear-gradient(120deg, #93c5fd, #60a5fa);
+}
+
+.social-link.instagram {
+    background: linear-gradient(120deg, #f9a8d4, #fda4af);
+}
+
+.social-link.tiktok {
+    background: linear-gradient(120deg, #99f6e4, #67e8f9);
 }
 
 .glass h2,
@@ -536,12 +593,14 @@ footer {
     .audience,
     .faq,
     .closing-cta,
+    .social-media,
     .trust {
         margin-top: 22px;
     }
 
     .btn,
-    .cta-btn {
+    .cta-btn,
+    .social-link {
         width: 100%;
         justify-content: center;
         font-size: 0.92rem;
